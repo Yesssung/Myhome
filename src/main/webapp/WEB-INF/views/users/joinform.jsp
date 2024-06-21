@@ -19,13 +19,13 @@
 	
 	<form method="POST" action="<%= request.getContextPath() %>/users">
 		<input type="hidden" name="a" value="join" />
-		<label for="name">이름</label>
-		<input type="text" name="name" /><br/>
+		<label for="name">이름</label>
+		<input type="text" name="name" placeholder="이름을 입력하세요"/><br/>
 		<label for="password">비밀번호</label>
-		<input type="password" name="password" /><br/>
+		<input type="password" name="password" placeholder="비밀번호를 입력하세요"/><br/>
 		<label for="email">이메일</label>
-		<input type="text" name="email" /><br/>
-		<label for="gender">성별</label>
+		<input type="text" name="email" placeholder="이메일을 입력하세요"/><br/>
+		<label for="gender">성별</label>
 		<input type="radio" name="gender" value="M" checked>남성
 		<input type="radio" name="gender" value="F">여성
 		<input type="submit" value="가입" />
